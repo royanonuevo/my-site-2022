@@ -8,7 +8,9 @@ const CTA = ({ label = '', href, icon }) => {
     >
       <div className="relative z-[2] inline-flex items-center">
         <span className="mr-1">{ label }</span>
-        { icon }
+        <span className="animate-bounce-arrow-right-short">
+          { icon }
+        </span>
       </div>
     </a>
   )

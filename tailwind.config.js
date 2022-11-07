@@ -23,6 +23,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'bounce-arrow-right': 'bounce-arrow-right 2s infinite',
+        'bounce-arrow-right-short': 'bounce-arrow-right-short 2s infinite',
+      },
+      keyframes: {
+        'bounce-arrow-right': {
+          '0%, 20%, 50%, 80%, 100%': { transform: 'translateX(0)' },
+          '40%': { transform: 'translateX(-10px)' },
+          '60%': { transform: 'translateX(-7px)' }
+        },
+        'bounce-arrow-right-short': {
+          '0%, 20%, 50%, 80%, 100%': { transform: 'translateX(0)' },
+          '40%': { transform: 'translateX(-5px)' },
+          '60%': { transform: 'translateX(-2px)' }
+        }
+      }
     },
   },
   plugins: [backfaceVisibility],

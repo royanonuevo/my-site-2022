@@ -45,7 +45,7 @@ const SectionPhotos = () => {
     }
   ]
   return (
-    <section className="text-center">
+    <section className="text-center bg-white">
       <ContentWrapper>
         <SectionTitle>Adventurous / Photographer</SectionTitle>
         <HorizontalLine />
@@ -66,7 +66,6 @@ const SectionPhotos = () => {
                     <Image
                       src={photo.src}
                       alt={photo.alt}
-                      loading='lazy'
                     />
                   </span>
                 </li>

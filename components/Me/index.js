@@ -11,7 +11,7 @@ const Me = () => {
           ></div>
           <div className="w-full h-full rounded-[50%] backface-hidden bg-black p-4 flex flex-col items-center justify-center text-center rotate3d-180deg">
             <p>Hello,<br />for any inquiries or collaboration,<br />Don&apos;t hesitate to contact me.</p>
-            <FaRegHandPointRight className="text-[20px] mt-2"/>
+            <FaRegHandPointRight className="text-[20px] mt-2 animate-bounce-arrow-right"/>
           </div>
         </div>
       </div>

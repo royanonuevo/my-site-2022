@@ -45,7 +45,7 @@ const SectionContact = () => {
       const randomNumber = Math.floor(Math.random() * allIds.length)
       const newRandomId = allIds[randomNumber]
       setRandomId(newRandomId)
-    }, 3000);
+    }, 2000);
   
     return () => {
       clearTimeout(timeOutId)
@@ -59,10 +59,10 @@ const SectionContact = () => {
         <HorizontalLine />
 
         <div className="sm:grid sm:gap-[34px] sm:grid-flow-col sm:max-w-[800px] m-auto">
-          <div className="flex justify-center mb-4 sm:block sm:mb-0">
+          <div className="flex justify-center mb-4 sm:block sm:mb-0 element-from-left">
             <Me />
           </div>
-          <div className="text-left">
+          <div className="text-left element-from-right">
             <p className="mb-10">{`I love to hear what people have to say. If you have any questions or thoughts you'd like to share with me, please let us know. I'm eager to hear your opinion.`}</p>
             <a 
               className="flex items-center ease-in duration-300 hover:text-white"

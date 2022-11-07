@@ -41,6 +41,53 @@
     40%, 60%, 80% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
     100% { transform: scale3d(1, 1, 1); } 
   }
+  .element-from-bottom {
+    animation: element-from-bottom 1.5s 1 cubic-bezier(0.165,0.840,0.440,1.000);
+    opacity: 1;
+  }
+  @keyframes element-from-bottom {
+    0% { transform: translate(0,15%); opacity:0 }
+    50% { transform: translate(0,15%); opacity:0 }
+    100% { transform: translate(0,0); opacity:1 }
+  }
+  .element-from-top {
+    animation: element-from-top .9s 1 ease-out;
+    opacity: 1;
+  }
+  @keyframes element-from-top {
+    0% { transform: translate(0, -30%); opacity: 0 }
+    100% { transform: translate(0, 0); opacity: 1}
+  }
+  .element-from-left {
+    animation: element-from-left .7s 1 ease-in-out;
+    opacity: 1;
+  }
+  @keyframes element-from-left {
+    0% { transform: translate(-20%, 0); opacity: 0 }
+    100% { transform: translate(0, 0); opacity: 1 }
+  }
+  .element-from-right {
+    animation: element-from-right .7s 1 ease-in-out;
+    opacity: 1;
+  }
+  @keyframes element-from-right {
+    0% { transform: translate(20%, 0); opacity: 0 }
+    100% { transform: translate(0, 0); opacity: 1 }
+  }
+  .animate-fade-in {
+    animation: fade-in .9s 1 ease-in-out;
+    opacity: 1;
+  }
+  @keyframes fade-in {
+    0% {
+        opacity: 0;
+        visibility: hidden
+    }
+    100% { 
+        opacity:1;
+        visibility: visible 
+    }
+  }
 }
 
 @layer components {

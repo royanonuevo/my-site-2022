@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <PageHead />
-      <main>
+      <main className="relative z-[1] pb-[60px]">
         <SectionMain />
         <SectionPhotos />
         <SectionVideos />
