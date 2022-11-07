@@ -1,10 +1,10 @@
 import Head from 'next/head'
 
 export default function PageHead () {
-  const pageUrl = 'https://royanonuevo.bitbucket.io'
+  const pageUrl = 'https://royanonuevo.vercel.app'
   const pageTitle = 'Roy Anonuevo'
-  const pageDescription = 'Hello, I\'m Roy from Philippines who is passionate about photography, hiking, website development, and a hobbyist travel filmmaker.'
-  const pageImageUrl = `${pageUrl}//src/images/roy-anonuevo-og-image.jpg`
+  const pageDescription = 'A software engineer from the Philippines who is passionate about hiking, photography, web development and an amateur travel filmmaker.'
+  const pageImageUrl = `${pageUrl}/images/roy-anonuevo-og-image.jpg`
 
   return (
     <Head>
