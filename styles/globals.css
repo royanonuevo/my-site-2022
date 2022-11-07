@@ -43,6 +43,7 @@
   }
   .element-from-bottom {
     animation: element-from-bottom 1.5s 1 cubic-bezier(0.165,0.840,0.440,1.000);
+    animation-fill-mode: both;
     opacity: 1;
   }
   @keyframes element-from-bottom {
