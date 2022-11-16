@@ -20,7 +20,7 @@ const ScrollIndicator = () => {
 
   return (
     <div className="fixed top-0 w-full z-10 ">
-      <div className="bg-teal-700 h-[2px]" style={{width: indicatorWidth}}></div>
+      <div className="bg-teal-600 h-[3px]" style={{width: indicatorWidth}}></div>
     </div>
   )
 }

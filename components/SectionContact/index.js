@@ -63,7 +63,7 @@ const SectionContact = () => {
             <Me />
           </div>
           <div className="text-left element-from-right">
-            <p className="mb-10">{`I love to hear what people have to say. If you have any questions or thoughts you'd like to share with me, please let us know. I'm eager to hear your opinion.`}</p>
+            <p className="mb-10">{`I love to hear what people have to say. If you have any questions or thoughts you'd like to share with me, please let me know.`}</p>
             <a 
               className="flex items-center ease-in duration-300 hover:text-white"
               href="mailto:anonuevoroy@gmail.com?Subject=Hi Roy" 
