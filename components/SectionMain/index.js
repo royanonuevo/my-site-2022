@@ -3,8 +3,16 @@ import ContentWrapper from 'components/ContentWrapper'
 const SectionMain = () => {
   return (
     <section className="h-screen w-full relative">
-      <video loop autoPlay muted poster='/videos/nagpatong-rock.jpg' className="object-cover object-[30%_50%] md:object-[10%_50%] w-full h-full lg:object-left">
-        <source src='/videos/nagpatong-rock.mp4' type='video/mp4' />
+      <video 
+        loop 
+        autoPlay 
+        muted 
+        poster='https://res.cloudinary.com/dvcklcb6e/image/upload/v1670555616/roy-anonuevo/videos/nagpatong-rock_dihgp5.jpg'
+        // poster='/videos/nagpatong-rock.jpg' 
+        className="object-cover object-[30%_50%] md:object-[10%_50%] w-full h-full lg:object-left"
+      >
+        {/* <source src='/videos/nagpatong-rock.mp4' type='video/mp4' /> */}
+        <source src='https://res.cloudinary.com/dvcklcb6e/video/upload/v1670555622/roy-anonuevo/videos/nagpatong-rock_odwxxe.mp4' type='video/mp4' />
       </video>
 
       <div className="bg-black/[0.3] absolute w-full h-full top-0 left-0 flex flex-col justify-center text-white">

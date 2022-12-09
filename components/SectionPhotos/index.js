@@ -1,11 +1,11 @@
 
 import Image from 'next/image'
-import img1 from 'public/images/ig/1.jpg'
-import img2 from 'public/images/ig/2.jpg'
-import img3 from 'public/images/ig/3.jpg'
-import img4 from 'public/images/ig/4.jpg'
-import img5 from 'public/images/ig/5.jpg'
-import img6 from 'public/images/ig/6.jpg'
+// import img1 from 'public/images/ig/1.jpg'
+// import img2 from 'public/images/ig/2.jpg'
+// import img3 from 'public/images/ig/3.jpg'
+// import img4 from 'public/images/ig/4.jpg'
+// import img5 from 'public/images/ig/5.jpg'
+// import img6 from 'public/images/ig/6.jpg'
 import ContentWrapper from 'components/ContentWrapper'
 import HorizontalLine from 'components/HorizontalLine'
 import SectionTitle from 'components/SectionTitle'
@@ -16,32 +16,32 @@ const SectionPhotos = () => {
   const photos = [
     {
       alt: 'Mt. Purgatory',
-      src: img1,
-      bgSrc: '/images/ig/1.jpg'
+      // src: img1,
+      bgSrc: 'https://res.cloudinary.com/dvcklcb6e/image/upload/v1670555231/roy-anonuevo/ig/1_pcwwxs.jpg' //'/images/ig/1.jpg'
     },
     {
       alt: 'M.t Pulag',
-      src: img2,
-      bgSrc: '/images/ig/2.jpg'
+      // src: img2,
+      bgSrc: 'https://res.cloudinary.com/dvcklcb6e/image/upload/v1670555232/roy-anonuevo/ig/2_s3acxf.jpg' //'/images/ig/2.jpg'
     },
     {
       alt: 'Mt. Mapalad',
-      src: img3,
-      bgSrc: '/images/ig/3.jpg'
+      // src: img3,
+      bgSrc: 'https://res.cloudinary.com/dvcklcb6e/image/upload/v1670555231/roy-anonuevo/ig/3_t3i5x9.jpg' //'/images/ig/3.jpg'
     },
     {
       alt: 'Japan',
-      src: img4,
-      bgSrc: '/images/ig/4.jpg'
+      // src: img4,
+      bgSrc: 'https://res.cloudinary.com/dvcklcb6e/image/upload/v1670555231/roy-anonuevo/ig/4_k8yglr.jpg' //'/images/ig/4.jpg'
     },{
       alt: 'Japan',
-      src: img5,
-      bgSrc: '/images/ig/5.jpg'
+      // src: img5,
+      bgSrc: 'https://res.cloudinary.com/dvcklcb6e/image/upload/v1670555231/roy-anonuevo/ig/5_dkpfvo.jpg' //'/images/ig/5.jpg'
     },
     {
       alt: 'Bali, Indonesia',
-      src: img6,
-      bgSrc: '/images/ig/6.jpg'
+      // src: img6,
+      bgSrc: 'https://res.cloudinary.com/dvcklcb6e/image/upload/v1670555232/roy-anonuevo/ig/6_mbtkuc.jpg' //'/images/ig/6.jpg'
     }
   ]
   return (
@@ -64,8 +64,9 @@ const SectionPhotos = () => {
                   />
                   <span className="hidden">
                     <Image
-                      src={photo.src}
+                      src={photo.bgSrc}
                       alt={photo.alt}
+                      layout='fill'
                     />
                   </span>
                 </li>
