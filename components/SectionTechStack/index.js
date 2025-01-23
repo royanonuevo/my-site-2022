@@ -126,7 +126,7 @@ const SectionTechStack = () => {
           {logos.map((row, rowIndex) => (
             <div 
               key={`tech-stack-row-${rowIndex}`} 
-              className='relative w-full whitespace-nowrap overflow-hidden py-7 border-b border-b-solid border-b-[#999]'
+              className='relative w-full whitespace-nowrap overflow-hidden py-7 border-b border-b-solid border-b-[#999] last:border-transparent'
             >
               <div className={`marquee-${rowIndex} inline-block w-max`}>
                 { row.map((logo, index) => {
